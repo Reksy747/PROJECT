@@ -10,6 +10,6 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $data = Product::paginate();
-        return view('layouts/product', compact('data'));
+        return view('product.index', compact('data'));
     }
 }

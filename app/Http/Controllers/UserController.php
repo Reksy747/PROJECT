@@ -13,6 +13,6 @@ class UserController extends Controller
         $type = $request->get('type') ?? 'customer';
         // filter user with role name
         $data = User::where('account_role', $type)->paginate();
-        return view('layouts/user', compact('data', 'type'));
+        return view('users.index', compact('data', 'type'));
     }
 }

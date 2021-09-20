@@ -17,6 +17,6 @@ class OrderController extends Controller
 
 
         $data = Order::paginate();
-        return view('layouts/order', compact('data'));
+        return view('order.index', compact('data'));
     }
 }
