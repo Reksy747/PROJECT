@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::post('/login','Auth\LoginController@loginBiasa');
-Route::get('/logout', 'Auth\LoginController@logout');
+// Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('user', 'UserController@index')->name('user');
 Route::get('/layouts/product', 'ProductController@index')->name('product');
 Route::get('/layouts/order', 'OrderController@index')->name('order');
